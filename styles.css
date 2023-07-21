@@ -1,0 +1,611 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, ubuntu, sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, ubuntu, sans-serif;
+    margin: 0;
+    background-color: rgb(0,9,29);
+    width: 100%;
+    height: 100vh;
+   
+  
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2%;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+  
+}
+
+#page-logo img{
+    padding: 0;
+    width: 100%;
+    height: 4.9rem;
+    display: block;
+    cursor: pointer;
+   
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 1.25rem 0;
+    padding: 0 1.75rem;    
+}
+
+
+#navbar li a{
+    color: white;
+    background-color: rgba(229, 9, 20, 1);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.4rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    }
+
+#navbar a:hover{
+    color: white;
+    background-color: rgb(181, 4, 13);
+    }
+
+#hero{
+   width: 100%;
+   /*height: 100vh;*/
+    background: linear-gradient(103.24deg, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url('images/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 18.7rem;
+    max-width: auto;
+    max-height: auto;
+    min-height: auto;
+    min-width: auto;
+}
+
+#hero-content{
+   width: 100%;
+   /*height: 100vh;*/
+    padding:0 9.25rem;
+    position: relative;
+    top: 189px;
+    max-width: auto;
+    max-height: auto;
+    min-height: auto;
+    min-width: auto;
+}
+
+#hero-content h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, ubuntu, sans-serif;
+    word-spacing: 0;
+    margin: 0;
+    height: 10.25rem;
+    width: 100%;
+    line-height: 5.0rem;
+
+}
+
+#hero-content h2{
+   color: white;
+    font-size: 1.25rem;
+    line-height: 2.0rem;
+    font-weight: 600;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, ubuntu, sans-serif;
+   
+
+
+}
+
+#hero-content p{
+    color: white;
+    padding: 0.6rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, ubuntu, sans-serif;
+
+    
+}
+
+ form  {
+    display: flex;
+    height: 3.5rem;
+    width: 70%;
+    border-radius: 4px;
+    margin-top: 20px;
+  
+   
+ }
+
+ form input{
+    background-color: transparent;
+    width: 75%;
+    padding: 1.25rem 0.9rem;
+    color: white;
+    line-height: 1.5rem;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 4px;
+   
+  
+  
+ }
+
+ button {
+    margin: 0 0.3rem;
+    padding: 0.06rem 3.8rem;
+    background-color:  rgb(181, 4, 13);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    
+   
+ 
+ }
+
+ #Netshows {
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ #Netshows ul {
+    width: 93%;
+    margin: 0  auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    list-style: none;
+
+ }
+
+
+
+ #Netshows  li{
+    background-image: linear-gradient(to right bottom, #0a133b, #0a133b, #0a133b, #330d29, #380e23);
+    border-radius: 6px;
+    height: 100%;
+    margin-bottom: 3.5rem;
+   
+ }
+
+ #Netshows  li img{
+    width: 70%;
+    height: 20rem;
+    object-fit: cover;
+    display: flex;
+    margin: 2.5rem auto;
+    align-items: center;
+    padding: 1.9rem 0;
+
+
+   
+ }
+
+ .Netshows-content{
+    color: white;
+    margin: 0 6.25rem;
+    bottom: 2.5rem;
+    position: relative;
+    padding: 0;
+ }
+
+ .Netshows-content h2 {
+   padding: 1.25rem 0;
+ }
+
+ #Questions{
+   width: 100%;
+   margin: 0 auto;
+
+ }
+
+ #Asked-questions {
+   padding: 0.6rem 0.12rem;
+   margin: 0 9.3rem;
+   color: white;
+   
+
+
+ }
+
+ #Asked-questions h2 {
+   font-weight: 500;
+   font-size: 2.5rem;
+   margin: 1.25rem 0;
+
+ }
+
+ .accordion {
+   background-color: rgb(19,33,68);
+   color: #fff;
+   cursor: pointer;
+   padding: 1.125rem;
+   margin: 0.25rem;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 1.5rem;
+   transition: 0.4s;
+ }
+
+ .active, .accordion:hover {
+   background-color: rgb(30,47,91); 
+ }
+ 
+ .accordion:after {
+   content: '\002B';
+   color: #fff;
+   font-weight: bold;
+   float: right;
+   margin-left: 0.25rem;
+ }
+ 
+ .active:after {
+   content: "\2212";
+ }
+
+ .panel {
+   padding: 0;
+   display: none;
+   background-color:  rgb(19,33,68);
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   font-size: 1.5rem;;
+ }
+
+ .panel p{
+   margin: 1.25rem;
+   
+ }
+
+ .bottom-form p{
+   font-size: 1.2rem;
+   margin: 1.25rem 0;
+   
+ }
+
+ #Asked-questions form {
+   max-width: 54%;
+   margin: 1.25rem 0;
+
+ }
+
+
+ .footer-content{
+   padding: 3.1rem 9rem 9rem;
+   color: #777;
+
+}
+
+.footer-content h2{
+   font-size: 1.12rem;
+   font-weight: 400;
+   margin-bottom: 1.9rem;
+}
+
+ .row{
+   display: flex;
+ 
+}
+
+
+.footer-content .col{
+   flex-basis: 25%;
+   flex-grow: 1;
+   margin-bottom: 1.25rem;
+}
+
+.footer-content .col a{
+   display: block;
+   text-decoration: none;
+   color: #777;
+   font-size: 0.9rem;
+   margin-bottom: 0.6rem;
+}
+
+.footer-content .row{
+   align-items: flex-start;
+   padding: 0.6rem 0;
+
+}
+
+.language-btn{
+   display: inline-flex;
+   align-items: center;
+   background: transparent;
+   border: 1px solid #fff;
+   padding: 0.4rem 0.6rem;
+
+}
+
+.language-btn img{
+   width: 10px;
+   margin-left: 10px;
+
+}
+
+.footer-content .language-btn{
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 3px;
+}
+
+.copyright-txt{
+   font-size: 0.9rem;
+   margin-top:1.25rem;
+   margin-bottom: 0.6rem;
+}
+
+
+
+@media (max-width: 1278px ){
+   #hero-content h1{
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+      }
+
+}
+@media (max-width: 1200px){
+   #hero-content h1{
+      font-size: 2.70rem;
+      line-height: 3.6rem;
+      }
+
+}
+
+@media (max-width: 1024px){
+   #hero-content h1{
+      font-size: 3rem;
+      line-height: 3.6rem;
+      }
+
+}
+
+@media (max-width: 768px){
+   #page-logo img{
+      padding: 0;
+      width: 100%;
+      height: 3.4rem;
+
+   }
+      
+   #hero-content h1{
+      font-size: 1.7rem;
+      line-height: 2.6rem;
+      }
+
+      #Netshows ul {
+         grid-template-columns: 100%;
+      }
+
+}
+
+@media (max-width: 480px){
+   header{
+      padding: 0.5rem 2%;
+  }
+  
+   #page-logo img{
+      padding: 0;
+      width: 100%;
+      height: 3.0rem;
+   }
+
+   #navbar li a{
+      font-size: 1.0rem;
+      padding:0.5rem 0.9rem;
+      }
+
+      #hero-content{
+         width: 100%;
+         padding: 0 2.25rem;
+         position: relative;
+         top: 150px;
+      }
+      
+      #hero-content h1{
+         font-size: 3.04rem;
+         line-height: 3.6rem;
+         }
+         #hero-content h2{
+             font-size: 1.2rem;
+             line-height: 2.0rem;
+             margin-top: 80px;
+         
+         }
+         
+         #hero-content p{
+             padding: 0.6rem 0;
+             font-size: 0.90rem;
+             line-height: 1.4rem;
+             font-weight: 500;
+            
+         }
+
+         form  {
+            display: flex;
+            flex-direction: column;
+            height: 2.5rem;
+            width: 100%;
+            margin-top: 20px;
+          
+           
+         }
+        
+         form input{
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            line-height: 1.5rem;
+            text-align: left;
+            border: 0.5px solid white;
+         }
+        
+         button {
+            width: 50%;
+            margin: 20px 0;
+            padding: 0.9rem 15px;
+            font-size: 1.0rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-align: left;
+            cursor: pointer;
+         }
+         #Netshows ul {
+            width: 93%;
+            margin: 0  auto;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            list-style: none;
+        
+         }
+        .Netshows-content{
+         color: white;
+         margin: 0 6.25rem;
+         bottom: 2.5rem;
+         position: relative;
+         padding-left: 0;
+      }
+      
+      .Netshows-content h2 {
+         padding: 1.25rem 0;
+         margin-left: -85px;
+      }
+
+      .Netshows-content p {
+         margin-left: -85px;
+         font-size: 13px;
+
+      }
+
+      form  {
+         display: flex;
+         flex-direction: column;
+         height: 2.5rem;
+         width: 100%;
+         margin-top: 20px;
+       
+        
+      }
+     
+      form input{
+         width: 100%;
+         padding: 0.7rem 0.9rem;
+         line-height: 1.5rem;
+         text-align: left;
+         border: 0.5px solid white;
+      }
+     
+      button {
+         width: 90%;
+         margin: 20px 0;
+         padding: 0.9rem 15px;
+         font-size: 1.0rem;
+         font-weight: 500;
+         line-height: 1.5rem;
+         text-align: left;
+         cursor: pointer;
+      }
+
+      #Questions{
+         width: 100%;
+         margin: 0 auto;
+      
+       }
+      
+       #Asked-questions {
+         padding: 0.6rem 0.12rem;
+         margin: 0 1.9rem;
+         width: 80%;
+       }
+      
+       #Asked-questions h2 {
+         font-size: 1.9rem;
+         margin: 1.25rem 0;
+      
+       }
+      
+       .accordion {
+         font-size: 1.2rem;
+       }
+      
+      
+       .panel {
+         font-size: 1.2rem;
+       }
+      
+      
+      
+       .footer-content{
+         margin-left: -100px;
+      }
+
+      .row{
+         display: flex;
+         flex-direction: column;
+     
+         
+       
+      }
+      
+      .footer-content h2{
+         font-size: 1.12rem;
+         font-weight: 400;
+         margin-top: 5.9rem;
+      }
+      
+      
+      
+      .language-btn{
+         width: 40%;
+         display: inline-flex;
+         align-items: center;
+         background: transparent;
+         border: 1px solid #fff;
+         padding: 0.1rem 0;
+      
+      }
+      
+      .language-btn img{
+         width: 10px;
+         margin-left: 10px;
+      
+      }
+      
+      .footer-content .language-btn{
+         color: #fff;
+         padding: 10px 20px;
+         border-radius: 3px;
+      }
+      
+      .copyright-txt{
+         font-size: 0.9rem;
+         margin-top:1.25rem;
+         margin-bottom: 0.6rem;
+      }
+         
+}
+
+
+
+
